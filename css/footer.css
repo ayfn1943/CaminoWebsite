@@ -1,0 +1,22 @@
+#footer {
+    background-color: #613a10;
+    overflow: hidden;
+    padding-right: 30px;
+}
+
+#footer a {
+    float: right;
+    margin: 3px;
+}
+
+#footer p {
+    float: left;
+    color: #d9c5b0;
+    padding-left: 100px;
+}
+
+@media (max-width: 768px) {
+    #footer a {
+        display: none;
+    }
+}

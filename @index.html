@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAMINO</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon-1.ico">
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- <script src="./js/script.js"></script> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- BS -->
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+
+
+<body>
+
+  <!-- header -->
+  <div class="topnav" id="myTopnav">
+    <a href="#" class="split"><img id="logocamino" src="../個人專題/img/LOGO.svg" style="object-fit: contain;"></a>
+    <span class="navoptions">
+      <a href="#heroBg" class="navoption">聯絡我們</a>
+      <a href="./@index gallery.html" class="navoption">相冊</a>
+      <a href="./@index backpack.html" class="navoption">行李清單</a>
+      <a href="#appsBg" class="navoption">必載APP</a>
+      <a href="#mapBg" class="navoption">路線介紹</a>
+      <a href="#introBg_light" class="navoption">關於</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </span>
+  </div>
+
+  <!-- header JS -->
+  <script src="./js/header.js"></script>
+
+  <!-- KV -->
+  <div class="bgimg">
+    <div class="caption">
+      <h1>朝聖之路</h1>
+      <p>與自己對話的旅程</p>
+      <a href="#introBg_light"><div id="bn">開始旅程</div></a>
+    </div>
+  </div>
+
+  <!-- <div class="parallax"></div> -->
+
+  <!-- KV JS -->
+  <script src="./js/KV.js"></script>
+
+
+  <!-- 介紹 -->
+  <div id="introBg_light">
+    <!-- 背景 -->
+    <div id="introBg_deep"></div>
+    <img id="introBg_decogroup" src="./img/deco-group.png" alt="deco-group">
+    <img id="introBg_vector" src="./img/Vector.png" alt="vector">
+    <img id="introBg_footprints" src="./img/footprints.png" alt="footprints">
+    <!-- 內容 -->
+    <div id="intro_s1" class="col-1"></div>
+    <div id="intro_1" class="col-5">
+      <h2>關於朝聖之路</h2>
+      <p>你喜歡徒步旅行並喜歡一步步探索您的度假目的地嗎？<br>
+        你想調動所有感官去享受休息時間嗎？<br>
+        你想聞到大自然清澈、新鮮的氣息嗎？<br>
+        你想想看綠色的草地和森林、令人印象深刻的海岸線和深藍色的大海嗎？<br>
+        您想品嚐豐富多元的當地美食嗎？<br>
+        你想認識來自世界各地的徒步旅行者並聽聽他們的經歷嗎？<br>
+        並在旅程結束時感受到個人的幸福？<br>
+        歡迎踏上朝聖之路！</p>
+    </div>
+    <div id="intro_2" class="col-1"></div>
+    <!-- <div id="intro_3" class="col-4"></div> -->
+    <img id="intro_3" class="col-4" src="./img/麥田.png">
+    <div id="intro_s2" class="col-1"></div>
+  </div>
+
+
+
+  <!-- 路線介紹 -->
+  <div id="mapBg">
+    <!-- 標題 -->
+    <div id="mapTitle">&nbsp;&nbsp;&nbsp;路線
+      <span>&nbsp;&nbsp;&nbsp;✳︎點擊下圖中的圖示(例:<img src="./img/map圖示.png" style="height: 20px;">)查看路線說明</span>
+    </div>
+    <!-- <div class="mapSubject">說明</div> -->
+    <!-- 地圖 -->
+    <div class="map-container">
+      <img id="map" usemap="#caminoMap" src="./img/Los-Caminos-de-Santiago-2019-2.png" alt="map">
+    </div>
+    <!-- <img id="map" usemap="#caminoMap" src="./img/Los-Caminos-de-Santiago-2019-2.png"> -->
+    <!-- 座標點擊 -->
+    <map name="caminoMap">
+      <area shape="rect" coords="40,32,170,75" href="javascript:void(0);" data-target="CaminoFisterra">
+      <area shape="rect" coords="273,37,385,70" href="javascript:void(0);" data-target="CaminoIngles">
+      <area shape="rect" coords="521,95,649,125" href="javascript:void(0);" data-target="CaminoPrimitivo">
+      <area shape="rect" coords="810,40,933,70" href="javascript:void(0);" data-target="CaminodelNorte">
+      <area shape="rect" coords="975,107,1090,135" href="javascript:void(0);" data-target="CaminoFrances">
+      <area shape="rect" coords="45,643,177,671" href="javascript:void(0);" data-target="CaminoPortugues">
+      <area shape="rect" coords="402,779,552,806" href="javascript:void(0);" data-target="CaminoViadelaPlata">
+      <area shape="rect" coords="230,258,363,287" href="javascript:void(0);" data-target="CaminodeInvierno">
+    </map>
+  </div>
+
+  <!-- 路線手風琴 -->
+  <div id="Accordion_route">
+    <div class="col-2"></div>
+    <div id="Accordions" class="col-8">
+      <!-- 1 -->
+      <button class="accordion" data-target="CaminoFisterra"><span style="color: #ED3995;">菲斯特拉之路 (Camino a Fisterra) ＆
+          穆西亞之路 (Camino a Muxia)</span></button>
+      <div class="panel" id="CaminoFisterra">
+        <table class="table_route">
+          <tr>
+            <td>長度</td>
+            <td>87公里</td>
+          </tr>
+          <tr>
+            <td>難易度</td>
+            <td>容易</td>
+          </tr>
+          <tr>
+            <td>出發地</td>
+            <td>聖地牙哥（Santiago de Compostela）</td>
+          </tr>
+          <tr>
+            <td>目的地</td>
+            <td style="color: #ED3995;">菲斯特拉（Fisterra）</td>
+          </tr>
+          <tr>
+            <td>天數</td>
+            <td>5天</td>
+          </tr>
+          <tr>
+            <td>特色</td>
+            <td>聖詹姆斯之路從聖地牙哥延伸，部分海景、海灘，景點「0公里」，風景優美</td>
+          </tr>
+        </table>
+        <table class="table_route">
+          <tr>
+            <td>長度</td>
+            <td>118公里</td>
+          </tr>
+          <tr>
+            <td>難易度</td>
+            <td>容易</td>
+          </tr>
+          <tr>
+            <td>出發地</td>
+            <td>聖地牙哥（Santiago de Compostela）</td>
+          </tr>
+          <tr>
+            <td>目的地</td>
+            <td style="color: #ED3995;">穆西亞（Muxia）</td>
+          </tr>
+          <tr>
+            <td>天數</td>
+            <td>7天</td>
+          </tr>
+          <tr>
+            <td>特色</td>
+            <td>聖詹姆斯之路從聖地牙哥延伸，部分海景、海灘，景點「0公里」，風景優美</td>
+          </tr>
+        </table>
+      </div>
+      <!-- 2 -->
+      <button class="accordion" data-target="CaminoIngles"><span style="color: #662D91;">英國之路 (Camino
+          Inglés)</span></button>
+      <div class="panel" id="CaminoIngles">
+        <table class="table_route">
+          <tr>
+            <td>長度</td>
+            <td>115公里</td>
+          </tr>
+          <tr>
+            <td>難易度</td>
+            <td>容易-中等</td>
+          </tr>
+          <tr>
+            <td>出發地</td>
+            <td style="color: #662D91;">費羅爾（Ferrol）</td>
+          </tr>
+          <tr>
+            <td>目的地</td>
+            <td>聖地牙哥（Santiago de Compostela）</td>
+          </tr>
+          <tr>
+            <td>天數</td>
+            <td>8天</td>
+          </tr>
+          <tr>
+            <td>特色</td>
+            <td>朝聖者較少，部分海景，部分海灘，約40％為柏油路，適合初學者</td>
+          </tr>
+        </table>
+      </div>
+      <!-- 3 -->
+      <button class="accordion" data-target="CaminoPrimitivo"><span style="color: #00A79D;">原始之路 (Camino
+          Primitivo)</span></button>
+      <div class="panel" id="CaminoPrimitivo">
+        <table class="table_route">
+          <tr>
+            <td>長度</td>
+            <td>330公里</td>
+          </tr>
+          <tr>
+            <td>難易度</td>
+            <td>中等-困難</td>
+          </tr>
+          <tr>
+            <td>出發地</td>
+            <td style="color: #00A79D;">奧維耶多（Oviedo）</td>
+          </tr>
+          <tr>
+            <td>目的地</td>
+            <td>聖地牙哥（Santiago de Compostela）</td>
+          </tr>
+          <tr>
+            <td>天數</td>
+            <td>16天</td>
+          </tr>
+          <tr>
+            <td>特色</td>
+            <td>朝聖者人數較少，從奧維耶多出發的路線較艱難，從盧戈出發的路線較容易，風景優美，視野開闊，適合雄心勃勃且經驗豐富的徒步旅行者和朝聖者</td>
+          </tr>
+        </table>
+      </div>
+      <!-- 4 -->
+      <button class="accordion" data-target="CaminodelNorte"><span style="color: #BE1E2D;">北方之路 (Camino del
+          Norte)</span></button>
+      <div class="panel" id="CaminodelNorte">
+        <table class="table_route">
+          <tr>
+            <td>長度</td>
+            <td>815公里</td>
+          </tr>
+          <tr>
+            <td>難易度</td>
+            <td>中等-困難</td>
+          </tr>
+          <tr>
+            <td>出發地</td>
+            <td><span style="color: #BE1E2D;">伊倫（Irun）</span>或<span style="color: #BE1E2D;">聖塞瓦斯蒂安（San Sebastian）</span>
+            </td>
+          </tr>
+          <tr>
+            <td>目的地</td>
+            <td>聖地牙哥（Santiago de Compostela）</td>
+          </tr>
+          <tr>
+            <td>天數</td>
+            <td>38天</td>
+          </tr>
+          <tr>
+            <td>特色</td>
+            <td>朝聖者較少，具挑戰性，風景秀麗，經常有海景、海灘、漁村和海濱度假勝地，適合經驗豐富的徒步旅行者和朝聖者，不懼怕運動挑戰，喜歡安靜的路線</td>
+          </tr>
+        </table>
+      </div>
+      <!-- 5 -->
+      <button class="accordion" data-target="CaminoFrances"><span style="color: #006738;" id="spanFrances">法國之路 (Camino
+          Francés)</span></button>
+      <div class="panel" id="CaminoFrances">
+        <table class="table_route">
+          <tr>
+            <td>長度</td>
+            <td>779公里</td>
+          </tr>
+          <tr>
+            <td>難易度</td>
+            <td>容易-困難</td>
+          </tr>
+          <tr>
+            <td>出發地</td>
+            <td style="color: #006738;">Saint Jean Pied de Port （SJPP）</td>
+          </tr>
+          <tr>
+            <td>目的地</td>
+            <td>聖地牙哥（Santiago de Compostela）</td>
+          </tr>
+          <tr>
+            <td>天數</td>
+            <td>38天</td>
+          </tr>
+          <tr>
+            <td>特色</td>
+            <td>經典的朝聖之路，朝聖者最多-尤其是最後100公里，基礎設施最好，景觀多樣，路線的第一部分非常艱難。適合聖詹姆斯之路的初學者、善於交際的人、獨自旅行者、對文化感興趣的人</td>
+          </tr>
+        </table>
+      </div>
+      <!-- 6 -->
+      <button class="accordion" data-target="CaminoPortugues"><span style="color:	#25AAE1;">葡萄牙之路 (Camino
+          Portugués)</span></button>
+      <div class="panel" id="CaminoPortugues">
+        <table class="table_route">
+          <tr>
+            <td>長度</td>
+            <td>248公里(中央線)、271公里(海線)或600公里(里斯本)</td>
+          </tr>
+          <tr>
+            <td>難易度</td>
+            <td>簡單-中度</td>
+          </tr>
+          <tr>
+            <td>出發地</td>
+            <td><span style="color:	#25AAE1;">波多（Porto）</span>或<span style="color:	#25AAE1;">里斯本（Lisbon）</span></td>
+          </tr>
+          <tr>
+            <td>目的地</td>
+            <td>聖地牙哥（Santiago de Compostela）</td>
+          </tr>
+          <tr>
+            <td>天數</td>
+            <td>15天（或26天）</td>
+          </tr>
+          <tr>
+            <td>特色</td>
+            <td>可以一趟旅程深刻體驗兩國的風俗民情，有中央線和海線可以選擇，風景優美。據說Lisbon至Porto的景色普通，加上所需時間較長，從Porto出發走葡萄牙之路似乎已成為顯學</td>
+          </tr>
+        </table>
+      </div>
+      <!-- 7 -->
+      <button class="accordion" data-target="CaminoViadelaPlata"><span style="color: #F15A29;">銀之路 (Camino Via de la
+          Plata)</span></button>
+      <div class="panel" id="CaminoViadelaPlata">
+        <table class="table_route">
+          <tr>
+            <td>長度</td>
+            <td>1000公里</td>
+          </tr>
+          <tr>
+            <td>難易度</td>
+            <td>容易–中等</td>
+          </tr>
+          <tr>
+            <td>出發地</td>
+            <td style="color: #F15A29;">塞維利亞（Sevilla）</td>
+          </tr>
+          <tr>
+            <td>目的地</td>
+            <td>聖地牙哥（Santiago de Compostela）</td>
+          </tr>
+          <tr>
+            <td>天數</td>
+            <td>42天</td>
+          </tr>
+          <tr>
+            <td>特色</td>
+            <td>每日路程較長，朝聖者人數較少，景色優美，文化名城眾多，從奧倫塞出發，烏拉河沿岸的風景尤為迷人，適合經驗豐富的徒步旅行者和朝聖者、尋求安寧和寧靜的人以及對文化感興趣的人</td>
+          </tr>
+        </table>
+      </div>
+      <!-- 8 -->
+      <button class="accordion" data-target="CaminodeInvierno"><span style="color: #8CC63F;">冬季之路 (Camino de
+          Invierno)</span></button>
+      <div class="panel" id="CaminodeInvierno">
+        <table class="table_route">
+          <tr>
+            <td>長度</td>
+            <td>260公里</td>
+          </tr>
+          <tr>
+            <td>難易度</td>
+            <td>中度-困難</td>
+          </tr>
+          <tr>
+            <td>出發地</td>
+            <td style="color: #8CC63F;">蓬費拉達（Ponferrada）</td>
+          </tr>
+          <tr>
+            <td>目的地</td>
+            <td>聖地牙哥（Santiago de Compostela）</td>
+          </tr>
+          <tr>
+            <td>天數</td>
+            <td>13天</td>
+          </tr>
+          <tr>
+            <td>特色</td>
+            <td>朝聖者較少，因降雪與溫度頗具挑戰性，風景秀麗，有葡萄酒產區，與許多羅馬式建築</td>
+          </tr>
+        </table>
+      </div>
+      <!-- on/off button -->
+      <label class="switch">
+        <input type="checkbox" id="toggleSwitch">
+        <span class="slider round"></span>
+      </label>
+      <span>我想要一次打開多個路線<span style="font-size: 16px;color: #b08b66d4;">&nbsp;&nbsp;※會暫時取消地圖點擊功能</span></span>
+      <!-- <p id="toggle-message" style="display: none; color: red; font-weight: bold; margin-top: 10px;">
+        ⚠ 多開模式開啟，地圖點擊功能已停用
+      </p> -->
+    </div>
+    <div class="col-2"></div>
+  </div>
+  <!-- 地圖座標+手風琴 JS -->
+  <script src="./js/Accordion_route.js"></script>
+
+  <!-- 關閉開關的popup提示 -->
+  <div class="popuptext" id="myPopup">地圖點擊功能關閉中</div>
+  <script>
+    document.getElementById("toggleSwitch").addEventListener("change", function () {
+      let popup = document.getElementById("myPopup");
+      if (this.checked) {
+        popup.style.display = "block";
+      } else {
+        popup.style.display = "none";
+      }
+    });
+  </script>
+
+  <!-- 必載APP -->
+  <!-- 大卡片 -->
+  <div id="appsBg">
+    <!-- 標題 -->
+    <div class="appsTitle">必載App&nbsp;&nbsp;</div>
+    <!-- 卡片版面 -->
+    <div class="col-1"></div>
+    <div id="apps_group1" class="col-5">
+      <div class="Appscard cardLeftside">
+        <div class="image-container"><img src="./img/APP_Camino Ninja App.webp" style="width: 100%;"></div>
+        <h6>Camino Ninja App</h6>
+        <p>有關camino沿線住宿和路線的離線信息，包括您旅程所需的準確距離和海拔計算。您可以透過應用程式輕鬆預訂住宿，如果您在朝聖途中迷路，也可以輕鬆使用地圖。</p>
+        <a href="https://camino.ninja" class="learn-more" target="_blank">Learn more+</a>
+      </div>
+      <div class="Appscard cardLeftside">
+        <div class="image-container"><img src="./img/APP_Google 翻譯.webp" style="width: 100%;"></div>
+        <h6>Google 翻譯</h6>
+        <p>遇到任何國家的人，都可以輕鬆使用這個Apps解決語言隔閡，交流無負擔。</p>
+        <a href="https://translate.google.com/intl/zh-TW/about/" class="learn-more" target="_blank">Learn more+</a>
+      </div>
+    </div>
+    <div id="apps_group2" class="col-5">
+      <div class="Appscard cardRightside">
+        <div class="image-container"></div>
+        <h6>WhatsApp Messenger</h6>
+        <p>歐美人士習慣使用的通訊軟體。與路上的歐美朋友認識時，下載並註冊這個Apps與他們保持聯繫。</p>
+        <a href="https://www.whatsapp.com" class="learn-more" target="_blank">Learn more+</a>
+      </div>
+    </div>
+    <div class="col-1"></div>
+  </div>
+  <!-- 小卡片 -->
+  <div id="appsBg_s">
+    <!-- 標題 -->
+    <div class="appsTitle">必載App&nbsp;&nbsp;</div>
+    <!-- 卡片版面 -->
+    <div class="Appscard_s">
+      <div class="image-container_s"><img src="./img/APP_Camino Ninja App.webp" style="width: 100%;"></div>
+      <h6>Camino Ninja App</h6>
+      <p>有關camino沿線住宿和路線的離線信息，包括您旅程所需的準確距離和海拔計算。您可以透過應用程式輕鬆預訂住宿，如果您在朝聖途中迷路，也可以輕鬆使用地圖。</p>
+      <a href="https://camino.ninja" class="learn-more" target="_blank">Learn more+</a>
+    </div>
+    <div class="Appscard_s whatsapp_s">
+      <div class="image-container_s"></div>
+      <h6>WhatsApp Messenger</h6>
+      <p>歐美人士習慣使用的通訊軟體。與路上的歐美朋友認識時，下載並註冊這個Apps與他們保持聯繫。</p>
+      <a href="https://www.whatsapp.com" class="learn-more" target="_blank">Learn more+</a>
+    </div>
+    <div class="Appscard_s">
+      <div class="image-container_s"><img src="./img/APP_Google 翻譯.webp" style="width: 100%;"></div>
+      <h6>Google 翻譯</h6>
+      <p>遇到任何國家的人，都可以輕鬆使用這個Apps解決語言隔閡，交流無負擔。</p>
+      <a href="https://translate.google.com/intl/zh-TW/about/" class="learn-more" target="_blank">Learn more+</a>
+    </div>
+  </div>
+
+  <!-- hero -->
+  <div id="heroBg">
+    <!-- 內容 -->
+    <div class="col-2"></div>
+    <div class="col-4 divhero">
+      <div class="hero-container"><img src="./img/icons8-pushpin-68.png"></div>
+      <img id="hero_1" src="./img/終點大合照.JPG">
+    </div>
+    <div class="col-1"></div>
+    <div id="hero_2" class="col-4">
+      <h2>創造屬於你的<br>朝聖之路</h2>
+      <p>以此表達我對朝聖之路的想念<br>
+        感謝一路上相遇的所有camino friends
+      </p>
+      <a href="./@index backpack.html"><button>聯絡我們</button></a>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+<div id="footer">
+  <p>Copyright © 2025 ayfn Camino | All Rights Reserved </p>
+  <a href="#"><img width="48" height="48" src="https://img.icons8.com/color/48/facebook.png" alt="facebook"/></a>
+  <a href="#"><img width="48" height="48" src="https://img.icons8.com/color/48/youtube-play.png" alt="youtube-play"/></a>
+  <a href="#"><img width="48" height="48" src="https://img.icons8.com/fluency/48/instagram-new.png" alt="instagram-new"/></a>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+@import "./BS.css";
+@import "./header.css";
+@import "./KV.css";
+@import "./intro.css";
+@import "./map.css";
+@import "./Accordion-route.css";
+@import "./Apps.css";
+@import "./hero.css";
+@import "./footer.css";
+
+/* 字體 */
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
+body{
+  font-family: 'Noto Sans TC',sans-serif;
+}

@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  /*根據 header 的高度調整填充 */
+  /* padding-top: 50px;  */
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  /* background-color: #d9a0a0; */
+  overflow: hidden;
+  padding-right: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  /* 確保 header 在最上層 */
+  background-color: transparent;
+  transition: background-color 0.3s;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.split {
+  float: left;
+  padding: 0;
+}
+
+#logocamino {
+  height: 45px;
+  margin-top: 6px;
+}
+
+.navoption {
+  border-left: solid 0.5px;
+  border-color: #874C0E;
+  text-align: center;
+}
+
+.navoptions {
+  margin: 15px;
+  display: block;
+  float: right;
+}
+
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  display: block;
+  color: #874C0E;
+  text-align: center;
+  padding: 0 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: #caa37e;
+}
+
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  padding-top: 4px;
+  display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 1000px) {
+
+  .topnav a:not(:first-child),
+  .topnav span a:first-child {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+  }
+
+  .topnav.responsive span a:first-child {
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 1000px) {
+  .topnav.responsive {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    /* 確保 header 在最上層 */
+  }
+
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}

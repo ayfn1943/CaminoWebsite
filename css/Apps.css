@@ -1,0 +1,213 @@
+#appsBg {
+    height: 700px;
+    background-color: #D5DECA;
+    position: relative;
+    /* z-index: -1; */
+    display: flex;
+    flex-wrap: wrap;
+}
+#appsBg_s {
+    height: 100%;
+    width: 100%;
+    background-color: #D5DECA;
+    /* position: relative; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;    
+    flex-direction: column;
+    display: none;
+}
+
+@media (max-width: 868px) {
+    #appsBg {
+        display: none;
+    }
+    #appsBg_s {
+        display: flex;
+    }
+}
+
+/* .mapSubject {
+    float: right;
+} */
+
+/* 地圖標題 */
+.appsTitle {
+    z-index: 1;
+    box-sizing: border-box;
+    text-align: right;
+    border-right: solid 8px;
+    border-color: #6C7A5C;
+    /* 文字 */
+    font-size: 42px;
+    color: #6C7A5C;
+    /* border: solid; */
+    float: left;
+    width: 100%;
+    margin-right: 80px;
+    margin-top: 50px;
+    /* background-color:yellow; */
+    height: fit-content;
+}
+
+/* App卡片 */
+.Appscard {
+    background-color: #A5B89F;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.Appscard:hover {
+    box-shadow: 10px 10px 10px 0px #929691;
+}
+
+.Appscard_s {
+    width: 330px;
+    height: 150px;
+    background-color: #A5B89F;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    margin-top: 100px;
+    /* margin-bottom: 30px;*/
+}
+.Appscard_s:hover {
+    box-shadow: 7px 7px 15px 3px #929691;
+}
+
+/* 卡片交叉位置 */
+#apps_group1>:first-child {
+    transform: translate(0, -55px);
+    /* top: 185px; */
+}
+
+#apps_group1>:nth-child(2) {
+    transform: translate(0, 55px);
+    /* top: 285px; */
+}
+
+#apps_group2>:first-child {
+    transform: translate(0, 75px);
+    /* top: 185px; */
+}
+
+/* Apps Logo */
+.image-container {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border-radius: 15px;
+}
+
+.image-container_s {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border-radius: 15px;
+    position: absolute;
+    top: -60px; 
+    left: 132px; /* 置中 */
+}
+
+.cardLeftside div {
+    position: absolute;
+    top: -60px;
+    left: 55px;
+}
+
+.cardRightside div {
+    position: absolute;
+    top: -60px;
+    right: 55px;
+    background-image: url(../img/APP_WhatsApp.webp);
+    background-size: cover;
+    background-position: center;
+}
+.whatsapp_s div {
+    position: absolute;
+    top: -60px;
+    right: 55px;
+    background-image: url(../img/APP_WhatsApp.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.Appscard h6 {
+    margin-top: -10px;
+    margin-bottom: -5px;
+    font-size: 24px;
+    color: white;
+    /* border: solid; */
+}
+.Appscard_s h6 {
+    margin-top: 25px;
+    margin-bottom: 5px;
+    font-size: 24px;
+    color: white;
+}
+
+.Appscard p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #515c44;
+    line-height: 1.6;
+    height: calc(1.6em * 3); /* 3行高度 */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* 限制顯示3行 */
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    white-space: normal; /* 保持正常換行 */
+}
+
+.Appscard_s p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #515c44;
+    line-height: 1.6;
+    height: calc(1.6em * 2); /* 3行高度 */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* 限制顯示3行 */
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    white-space: normal; /* 保持正常換行 */
+}
+
+.learn-more {
+    margin-top: -10px;
+    margin-bottom: -10px;
+    color: #F8E6A0;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    z-index: 4;
+    text-align: right;
+    width: 100%;
+}
+
+.cardLeftside {
+    margin-right: 20px;
+}
+
+.cardRightside {
+    margin-left: 20px;
+}
+
+.cardLeftside h6,
+.learn-more {
+    text-align: right;
+}
+
+.cardRightside p {
+    text-align: left;
+}
+
+/* 調整頁尾 */
+#appsBg_s>:last-child {
+    margin-bottom: 80px;
+}
